@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html">
+    <title>Калькулятор стоимости потолка</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+            <div class="calculator-main__container _container">
+                <div class="container">
+                    <div class="header">
+                        <div class="title">
+                            <h1>Рассчитайте стоимость Вашего потолка онлайн!</h1>
+                        </div>
+                    </div>
+
+                    <div id="main">
+                        <div class="left-block" id="basket">
+                            <div class="elem" >
+                                <div class="basket__item">
+                                    <p class="title-calc">Площадь помещения:</p>
+                                    <div class="align-middle count">
+                                        <div class="input-group">
+                                            <button type="button" class="btn btn-primary btn-minus">-</button>
+                                            <input type="number"  value="9"  data-price="1390" class="too calk_3 input" disabled />
+                                            <button type="button" class="btn btn-primary btn-plus">+</button>                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="elem" >
+                                <div class="basket__item">
+                                    <p class="title-calc">Количество углов:</p>
+                                    <div class="align-middle count">
+                                        <div class="input-group">
+                                            <button type="button" class="btn btn-primary btn-minus">-</button>
+                                            <input type="number" value="0" data-price="100" class="too calk_4 input" disabled />
+                                            <button type="button" class="btn btn-primary btn-plus">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>     
+                     
+                            <div class="elem2" id="basket">
+                                <div class="basket__item">
+                                    <p class="title-calc">Фактура потолка:</p>
+                                    <div class="calc">
+                                        <div class="r_calc calk_1" data-price="0"><p>Матовая</p></div>
+                                        <div class="options_calc">
+                                            <div data-price="0" class="active">ПВХ белый</div>
+                                            <div data-price="1">ПВХ цветной</div>
+                                            <div data-price="2">Тканевый белый</div>
+                                            <div data-price="-">Тканевый цветной</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                             
+                            <div class="elem2">
+                                <div class="basket__item">
+                                    <p class="title-calc">Цвет потолка:</p>
+                                    <div class="calc">
+                                        <div class="r_calc calk_2" data-price="0">
+                                            <p>Белый</p>
+                                        </div>
+                                        <div class="options_calc">
+                                            <div data-price="0" class="active">Белый</div>
+                                            <div data-price="100">Черный</div>
+                                            <div data-price="200">Синий</div>
+                                            <div data-price="200">Красный</div>
+                                            <div data-price="200">Зеленый</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                    
+
+                            <div class="elem3">
+                                <div class="result_calculator total-price fw-bold text-end pr-2">Итого: <span id="total-price"></span> руб.</div>
+                                <div class="info-price">(Ориентировочная стоимость)</div>
+                            </div>
+
+                            
+                            <div class="order-btn">
+                                <div class="wrappe">
+                                    <input type="checkbox" id="modal">
+                                    <label class="bat" for="modal">ОФОРМИТЬ ЗАКАЗ</label>
+    
+                                    <form action="" class="popup">
+                                        <span>Введите данные</span>
+                                        <div class="calc">
+                                            <input type="email" placeholder="Введите имя и телефон" name="email_phone" class="calk_email" required>
+                                        </div>
+                                        <input class="go_mail" type="submit" type="submit">
+                                        <label class="close" for="modal">+</label>
+                                    </form>
+                                </div>
+                             
+                                <div class="go_pdf">СКАЧАТЬ СМЕТУ</div>
+                                <div class="answer">Отправлено!</div>
+                            </div>   
+                        </div>
+                                
+                        <div class="right-block">
+                            <div class="citchen"></div>
+                        </div> 
+                    </div> 
+                </div>              
+            </div>             
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
